@@ -296,9 +296,9 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
 
 ---
 
-## 🎮 Features
+## Features
 
-### 🏙️ 3D City Visualization
+### 3D City Visualization
 
 - **5 Major Zones**: Connaught Place (center), Karol Bagh, Dwarka, Rohini, Saket
 - **3 Landmarks**: India Gate, Lotus Temple, Red Fort (accurate 3D positions)
@@ -310,7 +310,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
   - `🤖` Right panel (AI recommendations)
 - **High-Quality Rendering**: 2x pixel ratio, ACES tone mapping, smooth shadows
 
-### 🚦 Traffic Simulation
+### Traffic Simulation
 
 - **30 Corridor Segments**: Ring Road, NH8, Delhi-Gurgaon Expressway, and local streets
 - **40 Intersections**: Each with signal timing (cycle, green time)
@@ -321,7 +321,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
   - Average Speed: 54.2 km/h
   - Travel Time: 4.4 minutes average
 
-### 🌫️ Air Quality Modeling
+### Air Quality Modeling
 
 - **PM2.5 Emissions**: Vehicle-type differentiated (cars: 0.5 g/km, trucks: 2.5 g/km)
 - **Gaussian Dispersion**: Plume-based pollutant spread modeling
@@ -329,7 +329,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
 - **Health Impact**: Scoring system (0-100) based on PM2.5 exposure
 - **Traffic Contribution**: Isolates AQI increase from vehicle emissions (+75 AQI points)
 
-### 🎯 AI Policy Engine
+### AI Policy Engine
 
 - **Real-Time Recommendations**: Top 3 interventions with confidence scores (85-90%)
 - **Impact Analysis**: AQI reduction, lives saved, economic cost
@@ -339,7 +339,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
   - **Truck Ban (6-12 AM)** → -22 AQI, 120 lives saved
   - **Reflective Roofs** → -15 AQI, 80 lives saved
 
-### 🔧 Interventions
+### Interventions
 
 1. **Truck Restrictions**: Time-based bans (e.g., 6-12 AM) in specific zones
 2. **Lane Additions**: Increase capacity on congested segments
@@ -349,7 +349,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18.2.0** - Modern UI framework
@@ -373,7 +373,7 @@ A **fully functional 3D Digital Twin** of Delhi that simulates traffic, emission
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - **Node.js 18+** and npm
@@ -400,7 +400,7 @@ python --version # Should be 3.8+
 
 ---
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Two Terminal Setup (Recommended)
 
@@ -417,7 +417,7 @@ npm run dev
 # Opens on http://localhost:3000
 ```
 
-Then open your browser to **http://localhost:3000** 🎉
+Then open your browser to **http://localhost:3000** 
 
 ### Alternative: Run Demo Validation
 
@@ -426,59 +426,6 @@ python demo_corridor.py
 # Runs 11 validation tests
 # All tests should pass with [OK] status
 ```
-
----
-
-## 🎬 Demo Flow for Presentations
-
-### 1. **Opening (30 seconds)**
-"Welcome to the Delhi Digital Twin—a virtual replica of Delhi where policymakers can test interventions before real-world implementation."
-
-**Action**: Show 3D city rotating, point out 5 zones
-
-### 2. **Problem Statement (30 seconds)**
-"Delhi faces severe air quality issues with AQI often exceeding 300. Our twin simulates traffic, emissions, and air quality to enable data-driven decisions."
-
-**Action**: Click `☰` hamburger menu → Show Info Panel with AQI levels (320-365)
-
-### 3. **Live Demo - Truck Ban (1 minute)**
-"Let's test a truck ban scenario. Currently, Zone 2 (Karol Bagh) has AQI of 328."
-
-**Actions**:
-1. Click `🤖 AI Panel` button (top right)
-2. Click **"Truck Ban 6-12 AM in Zone 2"**
-3. Show AQI drop to **306** (-22 points)
-4. Point out: **"120 lives saved, minimal economic impact"**
-
-### 4. **AI Recommendations (1 minute)**
-"Our AI Policy Engine analyzes real-time conditions and suggests optimal interventions."
-
-**Actions**:
-1. Scroll through recommendations panel
-2. Highlight **confidence scores (85-90%)**
-3. Show **cost-benefit analysis** (AQI reduction vs. economic cost)
-4. Point out **implementation timelines** (immediate vs. 1-3 days vs. long-term)
-
-### 5. **CCTV Camera Views (30 seconds)**
-"We have 11 CCTV camera presets including major landmarks."
-
-**Actions**:
-1. Click bottom-left **"📹 CCTV Cameras"** panel
-2. Click **"🪷 Lotus Temple"** → Camera smoothly transitions to landmark view
-3. Click **"🏛️ India Gate"** → Show monument
-4. Click **"🏙️ City Overview"** → Return to full view
-
-### 6. **Emergency Response (30 seconds)**
-"In crisis situations, we simulate multi-intervention strategies."
-
-**Action**: Click **"▶️ DEMO EMERGENCY RESPONSE"** button at top center
-- Watch automated sequence:
-  - 🚨 Crisis detected → 🤖 AI analyzing → 🚛 Implementing truck ban → 🏫 School closures → 📉 AQI dropping from 450 → 380 → ✅ Success: 35 lives saved!
-
-### 7. **Closing (30 seconds)**
-"This twin enables risk-free policy testing, faster decisions, and transparent planning. It's ready for integration with live data feeds."
-
-**Total Demo Time**: 4 minutes ⏱️
 
 ---
 
@@ -514,7 +461,7 @@ All 11 tests pass in `demo_corridor.py`:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 aiforclimate/
@@ -534,7 +481,7 @@ aiforclimate/
 │   │   └── simulationStore.js      # Zustand state management
 │   └── App.jsx                     # Main app entry point
 ├── backend/
-│   ├── simple_app.py               # Lightweight Flask API ✅
+│   ├── simple_app.py               # Lightweight Flask API 
 │   ├── corridor_api.py             # Corridor-specific endpoints
 │   └── policy_engine.py            # AI recommendation logic
 ├── data/                           # CSV data files (6 files)
@@ -654,18 +601,6 @@ python simple_app.py
 
 ---
 
-## 🏆 Hackathon Talking Points
-
-1. **Innovation**: "First 3D Digital Twin for Delhi with corridor-level granularity and AI-powered recommendations"
-2. **Real-World Impact**: "Could save 10,000+ lives annually in Delhi by optimizing air quality interventions"
-3. **Scalability**: "Architecture works for any Indian metro—Mumbai, Bangalore, Chennai—just swap the data files"
-4. **AI Power**: "ML models predict intervention impacts with 90%+ accuracy, enabling risk-free policy testing"
-5. **Cost-Benefit**: "Shows ROI for each intervention in real-time (AQI reduction vs. economic cost)"
-6. **User Experience**: "Officials can test 100 scenarios in 1 hour vs. months of debate"
-7. **Public Transparency**: "Citizens can see what interventions are being planned and why, building trust"
-
----
-
 ## 📝 License
 
 MIT License - Free to use for educational and non-commercial purposes.
@@ -676,9 +611,8 @@ MIT License - Free to use for educational and non-commercial purposes.
 
 Built with ❤️ for climate action and better air quality in Indian cities.
 
-**Team**: AI for Climate Initiative  
-**Contact**: [Your Contact Info]  
-**GitHub**: [Your Repo URL]
+**Team**: Code of Duty
+**Contact**: vedant.ghule24@pccoepune.org  
 
 ---
 
@@ -690,7 +624,3 @@ Built with ❤️ for climate action and better air quality in Indian cities.
 4. **Corridor Simulation**: Daganzo (2007) - Urban Gridlock: Macroscopic Modeling
 
 ---
-
-**⭐ Star this repository if you found it useful!**
-
-**🚀 Ready to save lives and improve air quality? Let's deploy this!**
